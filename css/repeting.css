@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+	--ligth-blue: #31c3bd;
+	--Light-Blue-Hover: #65e9e4;
+	--Light-Yellow: #f2b137;
+	--Light-Yellow-Hover: #ffc860;
+	--Dark-Navy: #1a2a33;
+	--Semi-Dark-Navy: #1f3641;
+	--Silver: #a8bfc9;
+	--Silver-Hover: #dbe8ed;
+}
+
+* {
+	font-family: "Outfit", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.HEADING-L {
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 2.5px;
+}
+.HEADING-M {
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 1.5px;
+}
+.HEADING-S {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 1.25px;
+}
+.HEADING-XS {
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.BODY {
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.88px;
+}
+
+.button-prrimary-one {
+	background-color: var(--Light-Yellow);
+	box-shadow: 0px -8px 0px 0px #cc8b13 inset;
+	border-radius: 15px;
+	border: none;
+}

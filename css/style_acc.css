@@ -1,0 +1,21 @@
+:root {
+	--ligth-blue: #31c3bd;
+	--Light-Blue-Hover: #65e9e4;
+	--Light-Yellow: #f2b137;
+	--Light-Yellow-Hover: #ffc860;
+	--Dark-Navy: #1a2a33;
+	--Semi-Dark-Navy: #1f3641;
+	--Silver: #a8bfc9;
+	--Silver-Hover: #dbe8ed;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+dialog {
+	position: static;
+	border: none;
+}
