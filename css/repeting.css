@@ -15,6 +15,10 @@
 	font-family: "Outfit", sans-serif;
 }
 
+.none {
+	display: none;
+}
+
 body {
 	min-height: 100vh;
 }
@@ -51,6 +55,7 @@ body {
 	border-radius: 15px;
 	border: none;
 	padding: 18px 24px;
+	color: var(--Dark-Navy);
 }
 
 .button-primary-one:hover {
@@ -63,6 +68,7 @@ body {
 	border-radius: 15px;
 	border: none;
 	padding: 18px 24px;
+	color: var(--Dark-Navy);
 }
 
 .button-primary-two:hover {
@@ -95,12 +101,13 @@ body {
 
 .button-refresh {
 	background-color: var(--Silver);
-	box-shadow: 0px -8px 0px 0px #118c87 inset;
+	box-shadow: 0px -4px 0px 0px #118c87 inset;
 	border-radius: 10px;
 	border: none;
-	padding: 6px;
+	padding: 12px;
 }
 
 .button-refresh:hover {
 	background-color: var(--Silver-Hover);
 }
+

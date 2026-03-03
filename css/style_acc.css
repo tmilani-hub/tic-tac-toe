@@ -14,15 +14,94 @@ body {
 }
 
 #Dmenu {
+	border: none;
+	background-color: var(--Dark-Navy);
 	padding: 0;
 }
 
 #Dmenu::backdrop {
 	opacity: 1;
+	background-color: var(--Dark-Navy);
 }
 
 #menu {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+	gap: 25px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: start;
+	gap: 12px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.reform-one {
+	background-color: var(--Semi-Dark-Navy);
+	border-radius: 15px;
+	box-shadow: 0px -8px 0px 0px #10212a inset;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: start;
+	gap: 24px;
+	padding: 28px;
+	text-align: center;
+	color: var(--Silver);
+}
+
+.choice {
+	background-color: var(--Dark-Navy);
+	padding: 6px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.btn-choice {
+	border-radius: 10px;
+	border: none;
+	padding: 12px 18px;
+	box-shadow: none;
+	background-color: var(--Dark-Navy);
+	width: 50%;
+}
+
+.btn-choice:hover {
+	background-color: none;
+}
+
+.selected {
+	background-color: var(--Silver);
+}
+
+.selected-1 {
+	fill: var(--Dark-Navy);
+}
+
+.thehead {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px;
+}
+
+.thisreform {
+	background-color: var(--Semi-Dark-Navy);
+	padding: 12px;
+	border-radius: 5px;
+	box-shadow: 0px -4px 0px 0px #10212a inset;
+	color: var(--Silver);
+	font-weight: 700;
 }
