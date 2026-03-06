@@ -81,10 +81,11 @@ body {
 	border-radius: 10px;
 	border: none;
 	padding: 12px 18px;
+	color: var(--Dark-Navy);
 }
 
 .button-secondary-one:hover {
-	background-color: var(--Light-Blue-Hover);
+	background-color: var(--Light-Yellow-Hover);
 }
 
 .button-secondary-two {
@@ -93,6 +94,7 @@ body {
 	border-radius: 10px;
 	border: none;
 	padding: 12px 18px;
+	color: var(--Dark-Navy);
 }
 
 .button-secondary-two:hover {
@@ -111,3 +113,10 @@ body {
 	background-color: var(--Silver-Hover);
 }
 
+.blue {
+	color: var(--ligth-blue);
+}
+
+.yellow {
+	color: var(--Light-Yellow);
+}

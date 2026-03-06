@@ -110,6 +110,10 @@ form {
 	box-shadow: 0px -4px 0px 0px #10212a inset;
 	color: var(--Silver);
 	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
 }
 
 .grid-carrer {
@@ -135,14 +139,26 @@ main {
 	background-color: var(--Semi-Dark-Navy);
 	box-shadow: 0px -8px 0px 0px #10212a inset;
 	display: flex;
-	align-items: stretch;
-	justify-content: stretch;
+	align-items: center;
+	justify-content: center;
 }
 
 .case:hover {
 	border: 1px solid white;
 }
 
+.case:hover .croixxx path {
+	fill: none;
+	border: blue;
+	stroke: var(--ligth-blue);
+	stroke-width: 1px;
+}
+.case:hover .cercleee path {
+	fill: none;
+	border: blue;
+	stroke: var(--Light-Yellow);
+	stroke-width: 1px;
+}
 .case:active {
 	border: 1px solid red;
 }
@@ -175,6 +191,29 @@ main {
 }
 .color-yellow {
 	background-color: var(--Light-Yellow);
+}
+
+.win-or-lose-restart {
+	width: 100%;
+	border: none;
+	margin-left: 0;
+	margin-right: 0;
+	background-color: var(--Semi-Dark-Navy);
+}
+
+#menu-end-game {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 22px;
+	color: var(--Silver);
+}
+
+.choose {
+	display: flex;
+	gap: 20px;
 }
 
 @media screen and (min-width: 700px) {
