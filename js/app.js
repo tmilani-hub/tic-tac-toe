@@ -109,8 +109,44 @@ window.addEventListener("load", () => {
 			}
 			if (gameclick > 4) {
 				// condition de victoire
-				if (gameclick === 9) {
-					$Xwinorlose.showModal();
+				for (let i = 0; i < the_game.length; i++) {
+					if (
+						(the_game[i] == the_game[i + 1] &&
+							the_game[i] == the_game[i + 2] &&
+							the_game[i] != 1 &&
+							the_game[i] != 2 &&
+							the_game[i] != 4 &&
+							the_game[i] != 5 &&
+							the_game[i] != 7 &&
+							the_game[i] != 8) ||
+						(the_game[i] == the_game[i + 4] &&
+							the_game[i] == the_game[i + 8] &&
+							the_game[i] == 0) ||
+						(the_game[i] == the_game[i + 3] &&
+							the_game[i] == the_game[i + 6] &&
+							the_game[i] != 3 &&
+							the_game[i] != 4 &&
+							the_game[i] != 5 &&
+							the_game[i] != 6 &&
+							the_game[i] != 7 &&
+							the_game[i] != 8) ||
+						(the_game[i] == the_game[i + 2] &&
+							the_game[i] == the_game[i + 4] &&
+							the_game[i] == 2) ||
+						(the_game[i] == the_game[i - 1] &&
+							the_game[i] == the_game[i - 2] &&
+							the_game[i] != 0 &&
+							the_game[i] != 1 &&
+							the_game[i] != 3 &&
+							the_game[i] != 4 &&
+							the_game[i] != 6 &&
+							the_game[i] != 7)
+					) {
+						$Xwinorlose.showModal();
+					}
+					if (gameclick === 9) {
+						$ties.showModal();
+					}
 				}
 			}
 
