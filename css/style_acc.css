@@ -11,6 +11,10 @@
 
 body {
 	background-color: var(--Dark-Navy);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 #Dmenu {
@@ -37,6 +41,7 @@ form {
 	align-items: stretch;
 	justify-content: start;
 	gap: 12px;
+	width: 80vw;
 }
 
 .header {
@@ -95,6 +100,7 @@ form {
 	align-items: center;
 	justify-content: space-between;
 	padding: 12px;
+	width: 100%;
 }
 
 .thisreform {
@@ -104,4 +110,87 @@ form {
 	box-shadow: 0px -4px 0px 0px #10212a inset;
 	color: var(--Silver);
 	font-weight: 700;
+}
+
+.grid-carrer {
+	display: grid;
+	grid-template-columns: 12vh 12vh 12vh;
+	grid-template-rows: 12vh 12vh 12vh;
+	gap: 12px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	gap: 20px;
+	width: 80%;
+}
+
+.case {
+	padding: 8px;
+	border: none;
+	border-radius: 12px;
+	background-color: var(--Semi-Dark-Navy);
+	box-shadow: 0px -8px 0px 0px #10212a inset;
+	display: flex;
+	align-items: stretch;
+	justify-content: stretch;
+}
+
+.case:hover {
+	border: 1px solid white;
+}
+
+.case:active {
+	border: 1px solid red;
+}
+
+#info {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: stretch;
+	gap: 16px;
+	width: 100%;
+}
+
+.infogame {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: start;
+	border-radius: 10px;
+	text-align: center;
+	gap: 6px;
+	color: var(--Dark-Navy);
+}
+
+.color-blue {
+	background-color: var(--ligth-blue);
+}
+.color-grey {
+	background-color: var(--Silver);
+}
+.color-yellow {
+	background-color: var(--Light-Yellow);
+}
+
+@media screen and (min-width: 700px) {
+	form {
+		width: 50vw;
+	}
+	main {
+		width: 50vw;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	form {
+		width: 40vw;
+	}
+	main {
+		width: 40vw;
+	}
 }
